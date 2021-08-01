@@ -15,6 +15,7 @@ public class ProductoDetalleDaoImpl extends DaoGenerico<ProductoDetalle> impleme
 
 	@Override
 	public ProductoDetalle getDetalleProducto(Integer idProductoDetalle) {
+//		return getPorQuery("FROM producto_detalle b JOIN b.producto p JOIN b.producto m WHERE m.idProducto = 1").get(0);
 		return encontrarPorId(idProductoDetalle);
 	}
 

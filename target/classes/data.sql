@@ -15,5 +15,7 @@ INSERT INTO producto (imagen_frontal,imagen_trasera,nombre_producto,porcentaje_d
 VALUES ('ImagenFrontal:v2','imagenTrasera2','nombreProducto2',10,100000,90000);
 
 INSERT INTO producto_detalle (producto_id_producto,descripcion) VALUES (1,'arcu iaculis enim, sit amet ornare lectus justo eu');
+INSERT INTO producto_detalle (producto_id_producto,descripcion) VALUES (2,'arcu iaculis enim, sit amet ornare lectus justo eu2');
 
-INSERT INTO producto_detalle_listado_imagenes (producto_detalle_id_producto_detalle,listado_imagenes) VALUES (1,'img1'),(1,'img2');
+INSERT INTO producto_detalle_listado_imagenes (producto_detalle_id_producto_detalle,listado_imagenes) VALUES (1,'img1'),(1,'img2'),(1,'img3'),(1,'img4');
+INSERT INTO producto_detalle_listado_imagenes (producto_detalle_id_producto_detalle,listado_imagenes) VALUES (2,'img1'),(2,'img2'),(2,'img3'),(2,'img4');

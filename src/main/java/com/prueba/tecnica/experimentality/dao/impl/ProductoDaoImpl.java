@@ -2,11 +2,11 @@ package com.prueba.tecnica.experimentality.dao.impl;
 
 import java.util.List;
 
+
 import org.springframework.stereotype.Repository;
 
 import com.prueba.tecnica.experimentality.dao.ProductoDao;
 import com.prueba.tecnica.experimentality.entidades.Producto;
-import com.prueba.tecnica.experimentality.entidades.ProductoDetalle;
 
 @Repository
 public class ProductoDaoImpl extends DaoGenerico<Producto> implements ProductoDao{
@@ -22,8 +22,8 @@ public class ProductoDaoImpl extends DaoGenerico<Producto> implements ProductoDa
 	}
 
 	@Override
-	public List<Producto> getProductosPorNombre(String nombre) {		
-		return getPorColumna("nombreProducto", nombre);
+	public List<Producto> getProductosPorNombre(int numeroPagina,int tamanoPagina, String nombre) {		
+		return getPorColumna("nombreProducto", nombre,numeroPagina,tamanoPagina);
 	}
 
 
