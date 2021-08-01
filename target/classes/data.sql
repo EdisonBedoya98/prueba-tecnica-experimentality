@@ -13,3 +13,7 @@ VALUES ('ImagenFrontal:v','imagenTrasera','nombreProducto',10,100000,90000);
 
 INSERT INTO producto (imagen_frontal,imagen_trasera,nombre_producto,porcentaje_descuento,precio,precio_con_descuento)
 VALUES ('ImagenFrontal:v2','imagenTrasera2','nombreProducto2',10,100000,90000);
+
+INSERT INTO producto_detalle (producto_id_producto,descripcion) VALUES (1,'arcu iaculis enim, sit amet ornare lectus justo eu');
+
+INSERT INTO producto_detalle_listado_imagenes (producto_detalle_id_producto_detalle,listado_imagenes) VALUES (1,'img1'),(1,'img2');

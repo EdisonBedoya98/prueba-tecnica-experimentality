@@ -26,10 +26,5 @@ public class ProductoDaoImpl extends DaoGenerico<Producto> implements ProductoDa
 		return getPorColumna("nombreProducto", nombre);
 	}
 
-	@Override
-	public ProductoDetalle getDetalleProducto(int idProductoDetalle) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

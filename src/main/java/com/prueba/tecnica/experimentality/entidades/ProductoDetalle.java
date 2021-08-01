@@ -1,5 +1,6 @@
 package com.prueba.tecnica.experimentality.entidades;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,12 +26,12 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class ProductoDetalle {
+public class ProductoDetalle implements Serializable {
 	
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_producto_detalle",updatable = false, nullable = false)
-    private int idProductoDetalle;
+    private Integer idProductoDetalle;
 	
 	@OneToOne
 	private Producto producto;

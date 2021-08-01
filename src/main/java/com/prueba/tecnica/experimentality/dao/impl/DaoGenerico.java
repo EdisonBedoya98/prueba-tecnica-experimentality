@@ -17,7 +17,7 @@ public abstract class DaoGenerico<T extends Serializable> {
 		this.claseT = claseTASetear;
 	}
 
-	public T encontrarPorId(Long id) {
+	public T encontrarPorId(Integer id) {
 		return administradorEntidad.find(claseT, id);
 	}
 
@@ -41,7 +41,7 @@ public abstract class DaoGenerico<T extends Serializable> {
 		administradorEntidad.remove(entidad);
 	}
 
-	public void borrarPorId(Long idEntidad) {
+	public void borrarPorId(Integer idEntidad) {
 		T entidad = encontrarPorId(idEntidad);
 		borrar(entidad);
 	}

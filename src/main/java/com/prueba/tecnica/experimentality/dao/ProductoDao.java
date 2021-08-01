@@ -11,6 +11,5 @@ public interface ProductoDao {
 	
 	public List<Producto> getProductosPorNombre(String nombre);
 	
-	public ProductoDetalle getDetalleProducto(int idProductoDetalle);
 
 }

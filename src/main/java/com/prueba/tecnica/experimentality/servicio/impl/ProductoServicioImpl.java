@@ -29,10 +29,4 @@ public class ProductoServicioImpl implements ProductoServicio {
 		return productosPorNombre;
 	}
 
-	@Override
-	public ProductoDetalle detalleProducto(int idProductoDetalle) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }

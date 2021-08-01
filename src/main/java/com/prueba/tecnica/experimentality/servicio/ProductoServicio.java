@@ -10,7 +10,5 @@ public interface ProductoServicio {
 	public List<Producto> productosMasBuscados();
 	
 	public List<Producto> productosPorNombre(String nombre);
-	
-	public ProductoDetalle detalleProducto(int idProductoDetalle);
 
 }
